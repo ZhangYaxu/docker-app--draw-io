@@ -1,0 +1,214 @@
+{
+    "version":               "2.0.0",
+    "tasks":
+    [
+        {
+            "label":         "browser--open-application-url--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "${USER}",
+                             "bash/browser/open-url-in-browser.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "HOST_SERVICE_URL",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--build--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "build",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--create--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "up",
+                             "--no-start",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--down--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "down",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--kill--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "kill",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--print-container-ids--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "ps",
+                             "--quiet",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--print-container-names--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "ps",
+                             "--services",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--print-container-stati--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "ps",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--print-logs--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "logs",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--restart--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "restart",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--start--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "start",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--stop--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "stop",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "docker-compose--up--frontend-only",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                             "bash/util/elevate.sh",
+                             "root",
+                             "bash/docker/run-docker-compose-command.sh",
+                             ".",
+                             "frontend-only.docker-compose",
+                             "up",
+                             "--detach",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":         "git--pull-and-update-submodules",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args": [
+                             "bash/git/pull-and-update-submodules.sh",
+            ],
+            "problemMatcher": [ ],
+        },
+    ]
+}

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  server--draw-io:
+    build:
+      context:      './../../docker/server--draw-io'
+      dockerfile:   'frontend-only.dockerfile'
+    container_name: 'server--draw-io'
+    image:          'talsen-team/docker-app-draw-io:v10.1.2--frontend-only'
+    ports:
+      -             '80:80'
+    restart:        'no'
