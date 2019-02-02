@@ -18,7 +18,7 @@ To easily experiment with the draw-io frontend build, the following pre-requisit
 
 Then open the cloned repository directory with VS Code and use any of the tasks.
 
-### VS Code custom tasks
+### custom VS Code tasks
 
 Any docker-compose--* tasks use the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration.
 
