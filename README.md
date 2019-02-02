@@ -24,3 +24,7 @@ Then open the cloned repository directory with VS Code and use any of the tasks.
   Opens the localhost URL in the default web-browser (the opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL)
 - docker-compose--build--frontend-only  
   Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to build and tag the docker image locally
+- docker-compose--create--frontend-only  
+  Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to create relevant docker containers and docker networks, but does not start the container
+- docker-compose--down--frontend-only  
+  Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to remove created and / or running docker containers and docker networks
