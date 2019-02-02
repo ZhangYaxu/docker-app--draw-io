@@ -64,7 +64,7 @@ function open_url_if_valid() {
     echo "Opening URL ... done"
 }
 
-function prepare_docker_compose_environment() {
+function prepare_local_environment() {
     local VAR_HOST_PATH_TO_CONFIGURATION_DIR=${1}
     local VAR_HOST_NAME_OF_DOCKER_COMPOSE_FILE=${2}
 

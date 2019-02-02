@@ -4,6 +4,6 @@ set -euo pipefail
 
 source bash/util/functions.sh
 
-prepare_docker_compose_environment ${@}
+prepare_local_environment ${@}
 
 open_url_if_valid "${3}"
