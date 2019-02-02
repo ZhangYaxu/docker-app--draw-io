@@ -20,13 +20,31 @@ Then open the cloned repository directory with VS Code and use any of the tasks.
 
 ### VS Code custom tasks
 
+Any docker-compose--* tasks use the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration.
+
 - browser--open-application-url--frontend-only  
   Opens the localhost URL in the default web-browser (the opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL)
 - docker-compose--build--frontend-only  
-  Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to build and tag the docker image locally
+  Build and tags the docker image locally
 - docker-compose--create--frontend-only  
-  Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to create relevant docker containers and docker networks, but does not start the container
+  Creates relevant docker containers and docker networks, but does not start the containers
 - docker-compose--down--frontend-only  
-  Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to remove created and / or running docker containers and docker networks
+  Removes created and / or running docker containers and docker networks
 - docker-compose--kill--frontend-only  
-  Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to kill running containers
+  Kills running containers
+- docker-compose--print-container-ids--frontend-only  
+  Prints ids of running docker containers
+- docker-compose--print-container-names--frontend-only  
+  Prints names of running docker containers
+- docker-compose--print-container-stati--frontend-only  
+  Prints stati of running docker containers
+- docker-compose--print-logs--frontend-only  
+  Print logs of running docker containers
+- docker-compose--restart--frontend-only  
+  Restarts running and / or stopped docker containers
+- docker-compose--start--frontend-only  
+  Starts stopped docker containers
+- docker-compose--stop--frontend-only  
+  Stops running docker containers
+- docker-compose--up--frontend-only  
+  Creates relevant docker containers and networks and starts them immediately
