@@ -6,7 +6,7 @@
 
 The server application draw-io ready to run inside a docker container.
 
-## How to use
+## how to use
 
 To easily experiment with the draw-io frontend build, the following pre-requisites are preferred:
 
@@ -18,7 +18,7 @@ To easily experiment with the draw-io frontend build, the following pre-requisit
 
 Then open the cloned repository directory with VS Code and use any of the tasks.
 
-### Tasks
+### VS Code custom tasks
 
 - browser--open-application-url--frontend-only  
   Opens the localhost URL in the default web-browser (the opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL)
@@ -28,3 +28,5 @@ Then open the cloned repository directory with VS Code and use any of the tasks.
   Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to create relevant docker containers and docker networks, but does not start the container
 - docker-compose--down--frontend-only  
   Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to remove created and / or running docker containers and docker networks
+- docker-compose--kill--frontend-only  
+  Uses the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration to kill running containers
