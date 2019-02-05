@@ -43,8 +43,10 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
     - [docker-compose--container--stop](bash-commands/docker-compose--container--stop.sh)  
       Stops all running containers declared by the compose configuration.
   - docker-compose--image--*
-    - docker-compose--image--build
-    - docker-compose--image--rebuild
+    - [docker-compose--image--build](bash-commands/docker-compose--image--build.sh)  
+      Builds all required docker images referenced by the compose configuration (using build cache).
+    - [docker-compose--image--rebuild](bash-commands/docker-compose--image--rebuild.sh)  
+      Builds all required docker images referenced by the compose configuration (without using build cache).
   - docker-compose--log--*
     - docker-compose--log--container-info
     - docker-compose--log--container-log
