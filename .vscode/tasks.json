@@ -45,6 +45,20 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "docker-compose--container--kill",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--container--kill.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":          "docker-compose--container--restart",
             "type":           "shell",
             "command":        "/bin/bash",
