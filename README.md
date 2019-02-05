@@ -35,8 +35,9 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
       Creates and starts required docker containers and docker networks.
   - docker-compose--container--*
     - [docker-compose--container--kill](bash-commands/docker-compose--container--kill.sh)  
-      Kills running containers declared by the compose configuration.
-    - docker-compose--container--restart
+      Kills all running containers declared by the compose configuration.
+    - [docker-compose--container--restart](bash-docker/docker-compose--container--restart.sh)  
+      Restarts all containers declared by the compose configuration.
     - docker-compose--container--start
     - docker-compose--container--stop
   - docker-compose--image--*
