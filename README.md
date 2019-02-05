@@ -58,6 +58,7 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
     - [docker-compose--system--prune](bash-commands/docker-compose--system--prune.sh)  
       Prunes the local docker system.
   - docker-compose--volumes--*
-    - docker-compose--volumes--wipe-local
+    - [docker-compose--volumes--wipe-local](bash-commands/docker-compose--volumes--wipe-local.sh)  
+      Wipes local volume mapping directories, located in the subdirectory 'volumes/', if there are any.
 - git--*
   - git--pull-and-update-submodules
