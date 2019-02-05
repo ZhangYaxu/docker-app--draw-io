@@ -40,7 +40,8 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
       Restarts all containers declared by the compose configuration (if they were created before).
     - [docker-compose--container--start](bash-commands/docker-compose--container--start.sh)  
       Starts all containers declared by the compose configuration (if they were created before).
-    - docker-compose--container--stop
+    - [docker-compose--container--stop](bash-commands/docker-compose--container--stop.sh)  
+      Stops all running containers declared by the compose configuration.
   - docker-compose--image--*
     - docker-compose--image--build
     - docker-compose--image--rebuild
