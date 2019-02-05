@@ -17,6 +17,20 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "docker-compose--image--build",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--image--build.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":         "git--pull-and-update-submodules",
             "type":          "shell",
             "command":       "/bin/bash",

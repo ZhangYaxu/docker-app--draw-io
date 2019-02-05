@@ -3,6 +3,7 @@
 !.vscode/
 !.vscode/tasks.json
 !bash-commands/
+!bash-commands/docker-compose--image--build.sh
 !bash-commands/open-application-url.sh
 !bash-commands/pull-and-update-submodules.sh
 !bash-util/
