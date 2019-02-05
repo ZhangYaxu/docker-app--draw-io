@@ -3,6 +3,7 @@
 !.vscode/
 !.vscode/tasks.json
 !bash-commands/
+!bash-commands/docker-compose--compose--create.sh
 !bash-commands/docker-compose--compose--down.sh
 !bash-commands/docker-compose--compose--up.sh
 !bash-commands/docker-compose--container--kill.sh

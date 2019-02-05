@@ -17,6 +17,20 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "docker-compose--compose--create",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--compose--create.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":          "docker-compose--compose--down",
             "type":           "shell",
             "command":        "/bin/bash",
