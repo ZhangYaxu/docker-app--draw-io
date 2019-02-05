@@ -46,8 +46,8 @@ function export_environment_file() {
     done < "${VAR_PATH_TO_ENV_FILE}"
 }
 
-function open_url_if_valid() {
-    local VAR_NAME_OF_URL_ENVIRONMENT_VARIABLE=${1}
+function open_application_url_if_defined() {
+    local VAR_NAME_OF_URL_ENVIRONMENT_VARIABLE="HOST_SERVICE_URL"
 
     echo "Opening URL ..."
 
@@ -74,9 +74,11 @@ function prepare_local_environment() {
 
     export_environment_file ${VAR_HOST_PATH_TO_ENV_FILE}
 
-    ensure_exising_environment_variable "HOST_SERVICE_NAME"
+    local VAR_NAME_OF_SERVICE_NAME_ENVIRONMENT_VARIABLE="HOST_SERVICE_NAME"
 
-    local VAR_HOST_PATH_TO_DOCKER_COMPOSE_FILE=${VAR_HOST_PATH_TO_CONFIGURATION_DIR}/docker-compose/${HOST_SERVICE_NAME}/${VAR_HOST_NAME_OF_DOCKER_COMPOSE_FILE}
+    ensure_exising_environment_variable ${VAR_NAME_OF_SERVICE_NAME_ENVIRONMENT_VARIABLE}
+
+    local VAR_HOST_PATH_TO_DOCKER_COMPOSE_FILE=${VAR_HOST_PATH_TO_CONFIGURATION_DIR}/docker-compose/${!VAR_NAME_OF_SERVICE_NAME_ENVIRONMENT_VARIABLE}/${VAR_HOST_NAME_OF_DOCKER_COMPOSE_FILE}
 
     ensure_existing_file ${VAR_HOST_PATH_TO_DOCKER_COMPOSE_FILE}
 

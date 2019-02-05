@@ -2,16 +2,11 @@
 
 !.vscode/
 !.vscode/tasks.json
-!bash/
-!bash/browser/
-!bash/browser/open-url-in-browser.sh
-!bash/docker/
-!bash/docker/run-docker-compose-command.sh
-!bash/git/
-!bash/git/pull-and-update-submodules.sh
-!bash/util/
-!bash/util/elevate.sh
-!bash/util/functions.sh
+!bash-commands/
+!bash-commands/open-application-url.sh
+!bash-util/
+!bash-util/elevate.sh
+!bash-util/functions.sh
 !docker/
 !docker/server--draw-io/
 !docker/server--draw-io/default.docker
