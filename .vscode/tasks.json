@@ -143,6 +143,20 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "docker-compose--volumes--wipe-local",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--volumes--wipe-local.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":         "git--pull-and-update-submodules",
             "type":          "shell",
             "command":       "/bin/bash",
