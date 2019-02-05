@@ -16,7 +16,7 @@ To easily experiment with the draw-io frontend build, the following pre-requisit
 3. Install docker (at least version 18.09.1, build 4c52b90)
 4. Install docker-compose (at least version 1.21.2, build a133471)
 
-Then open the cloned repository directory with VS Code and use any of the tasks.
+Then open the cloned repository directory with VS Code and use any of the custom tasks.
 
 ## custom VS Code tasks
 
@@ -24,10 +24,13 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
 
 - browser--*
   - browser--open-application-url  
-    Opens the localhost URL in the default web-browser (the opened URL is defined in   [host.env](host.env) by the variable HOST_SERVICE_URL)
+    Opens the localhost docekr service URL in the default web-browser. The opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL.
+    (related [script](bash-commands/browser--open-application-url.sh))
 - docker-compose--*
   - docker-compose--compose--*
     - docker-compose--compose--create
+      Creates required docker containers and docker networks but does not start them.  
+      (related [script](bash-commands/docker-compose--compose--create.sh))
     - docker-compose--compose--down
     - docker-compose--compose--up
   - docker-compose--container--*
