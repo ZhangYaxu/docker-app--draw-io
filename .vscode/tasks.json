@@ -143,6 +143,20 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "docker-compose--log--container-info",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--log--container-info.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":          "docker-compose--system--clean",
             "type":           "shell",
             "command":        "/bin/bash",

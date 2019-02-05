@@ -12,6 +12,7 @@
 !bash-commands/docker-compose--container--stop.sh
 !bash-commands/docker-compose--image--build.sh
 !bash-commands/docker-compose--image--rebuild.sh
+!bash-commands/docker-compose--log--container-info.sh
 !bash-commands/docker-compose--system--clean.sh
 !bash-commands/docker-compose--system--prune.sh
 !bash-commands/docker-compose--volumes--wipe-local.sh
