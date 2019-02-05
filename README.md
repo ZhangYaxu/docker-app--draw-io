@@ -48,8 +48,10 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
     - [docker-compose--image--rebuild](bash-commands/docker-compose--image--rebuild.sh)  
       Builds all required docker images referenced by the compose configuration (without using build cache).
   - docker-compose--log--*
-    - docker-compose--log--container-info
-    - docker-compose--log--container-log
+    - [docker-compose--log--container-info](bash-commands/docker-compose--log--container-info.sh)  
+      Prints general conntainer informations regarding the compose configuration to the console.
+    - [docker-compose--log--container-log](bash-commands/docker-compose--log--container-log.sh)  
+      Prints logs of running containers declared by the compose configuration to the console.
   - docker-compose--system--*
     - docker-compose--system--clean
     - docker-compose--system--prune
