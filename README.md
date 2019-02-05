@@ -24,15 +24,15 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
 
 - browser--*
   - browser--open-application-url  
-    Opens the localhost docekr service URL in the default web-browser. The opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL.
-    (related [script](bash-commands/browser--open-application-url.sh))
+    Opens the localhost docekr service URL in the default web-browser. The opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL. (related [script](bash-commands/browser--open-application-url.sh))
 - docker-compose--*
   - docker-compose--compose--*
     - docker-compose--compose--create
-      Creates required docker containers and docker networks but does not start them.  
-      (related [script](bash-commands/docker-compose--compose--create.sh))
+      Creates required docker containers and docker networks but does not start them. (related [script](bash-commands/docker-compose--compose--create.sh))
     - docker-compose--compose--down
+      Stops and removes required docker containers and docker networks. (related [script](bash-commands/docker-compose--compose--down.sh))
     - docker-compose--compose--up
+      Creates and starts required docker containers and docker networks. (related [script](bash-commands/docker-compose--compose--up.sh))
   - docker-compose--container--*
     - docker-compose--container--kill
     - docker-compose--container--restart
