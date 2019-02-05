@@ -13,6 +13,7 @@
 !bash-commands/docker-compose--image--build.sh
 !bash-commands/docker-compose--image--rebuild.sh
 !bash-commands/docker-compose--system--clean.sh
+!bash-commands/docker-compose--system--prune.sh
 !bash-commands/docker-compose--volumes--wipe-local.sh
 !bash-commands/open-application-url.sh
 !bash-commands/pull-and-update-submodules.sh

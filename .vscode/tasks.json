@@ -157,6 +157,20 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "docker-compose--system--prune",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--system--prune.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":          "docker-compose--volumes--wipe-local",
             "type":           "shell",
             "command":        "/bin/bash",
