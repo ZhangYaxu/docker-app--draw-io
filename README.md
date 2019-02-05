@@ -18,33 +18,33 @@ To easily experiment with the draw-io frontend build, the following pre-requisit
 
 Then open the cloned repository directory with VS Code and use any of the tasks.
 
-### custom VS Code tasks
+## custom VS Code tasks
 
-Any docker-compose--* tasks use the frontend-only [dockerfile](docker/server--draw-io/frontend-only.dockerfile) and [docker-compose](docker-compose/server--draw-io/frontend-only.docker-compose) configuration.
+Any docker-compose--* tasks refer to the default [dockerfile](docker/server--draw-io/default.docker) and [docker-compose](docker-compose/server--draw-io/default.docker-compose) configuration if required for command execution.
 
-- browser--open-application-url--frontend-only  
-  Opens the localhost URL in the default web-browser (the opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL)
-- docker-compose--build--frontend-only  
-  Build and tags the docker image locally
-- docker-compose--create--frontend-only  
-  Creates relevant docker containers and docker networks, but does not start the containers
-- docker-compose--down--frontend-only  
-  Removes created and / or running docker containers and docker networks
-- docker-compose--kill--frontend-only  
-  Kills running containers
-- docker-compose--print-container-ids--frontend-only  
-  Prints ids of running docker containers
-- docker-compose--print-container-names--frontend-only  
-  Prints names of running docker containers
-- docker-compose--print-container-stati--frontend-only  
-  Prints stati of running docker containers
-- docker-compose--print-logs--frontend-only  
-  Print logs of running docker containers
-- docker-compose--restart--frontend-only  
-  Restarts running and / or stopped docker containers
-- docker-compose--start--frontend-only  
-  Starts stopped docker containers
-- docker-compose--stop--frontend-only  
-  Stops running docker containers
-- docker-compose--up--frontend-only  
-  Creates relevant docker containers and networks and starts them immediately
+- browser--*
+  - browser--open-application-url  
+    Opens the localhost URL in the default web-browser (the opened URL is defined in   [host.env](host.env) by the variable HOST_SERVICE_URL)
+- docker-compose--*
+  - docker-compose--compose--*
+    - docker-compose--compose--create
+    - docker-compose--compose--down
+    - docker-compose--compose--up
+  - docker-compose--container--*
+    - docker-compose--container--kill
+    - docker-compose--container--restart
+    - docker-compose--container--start
+    - docker-compose--container--stop
+  - docker-compose--image--*
+    - docker-compose--image--build
+    - docker-compose--image--rebuild
+  - docker-compose--log--*
+    - docker-compose--log--container-info
+    - docker-compose--log--container-log
+  - docker-compose--system--*
+    - docker-compose--system--clean
+    - docker-compose--system--prune
+  - docker-compose--volumes--*
+    - docker-compose--volumes--wipe-local
+- git--*
+  - git--pull-and-update-submodules
