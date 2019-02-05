@@ -3,11 +3,11 @@
 !.vscode/
 !.vscode/tasks.json
 !bash-commands/
-!bash-commands/docker-compose--container--down.sh
+!bash-commands/docker-compose--compose--down.sh
+!bash-commands/docker-compose--compose--up.sh
 !bash-commands/docker-compose--container--restart.sh
 !bash-commands/docker-compose--container--start.sh
 !bash-commands/docker-compose--container--stop.sh
-!bash-commands/docker-compose--container--up.sh
 !bash-commands/docker-compose--image--build.sh
 !bash-commands/docker-compose--image--rebuild.sh
 !bash-commands/open-application-url.sh

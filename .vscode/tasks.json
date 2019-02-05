@@ -17,14 +17,28 @@
             "problemMatcher": [ ],
         },
         {
-            "label":          "docker-compose--container--down",
+            "label":          "docker-compose--compose--down",
             "type":           "shell",
             "command":        "/bin/bash",
             "args":
             [
                               "bash-util/elevate.sh",
                               "root",
-                              "bash-commands/docker-compose--container--down.sh",
+                              "bash-commands/docker-compose--compose--down.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
+            "label":          "docker-compose--compose--up",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--compose--up.sh",
                               ".",
                               "default.docker-compose",
             ],
@@ -67,20 +81,6 @@
                               "bash-util/elevate.sh",
                               "root",
                               "bash-commands/docker-compose--container--stop.sh",
-                              ".",
-                              "default.docker-compose",
-            ],
-            "problemMatcher": [ ],
-        },
-        {
-            "label":          "docker-compose--container--up",
-            "type":           "shell",
-            "command":        "/bin/bash",
-            "args":
-            [
-                              "bash-util/elevate.sh",
-                              "root",
-                              "bash-commands/docker-compose--container--up.sh",
                               ".",
                               "default.docker-compose",
             ],
