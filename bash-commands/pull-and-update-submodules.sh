@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+source bash-util/functions.sh
+
 echo -E "Pulling changes ..."
 
 git pull --rebase
