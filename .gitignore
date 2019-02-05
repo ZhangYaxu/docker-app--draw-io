@@ -14,10 +14,10 @@
 !bash/util/functions.sh
 !docker/
 !docker/server--draw-io/
-!docker/server--draw-io/frontend-only.dockerfile
+!docker/server--draw-io/default.docker
 !docker-compose/
 !docker-compose/server--draw-io/
-!docker-compose/server--draw-io/frontend-only.docker-compose
+!docker-compose/server--draw-io/default.docker-compose
 !.gitignore
 !host.env
 !LICENCE
