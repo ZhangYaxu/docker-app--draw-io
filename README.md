@@ -23,18 +23,19 @@ Then open the cloned repository directory with VS Code and use any of the custom
 Any docker-compose--* tasks refer to the default [dockerfile](docker/server--draw-io/default.docker) and [docker-compose](docker-compose/server--draw-io/default.docker-compose) configuration if required for command execution.
 
 - browser--*
-  - browser--open-application-url  
-    Opens the localhost docekr service URL in the default web-browser. The opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL. (related [script](bash-commands/browser--open-application-url.sh))
+  - [browser--open-application-url](bash-commands/browser--open-application-url.sh)  
+    Opens the localhost docekr service URL in the default web-browser. The opened URL is defined in [host.env](host.env) by the variable HOST_SERVICE_URL.
 - docker-compose--*
   - docker-compose--compose--*
-    - docker-compose--compose--create
-      Creates required docker containers and docker networks but does not start them. (related [script](bash-commands/docker-compose--compose--create.sh))
-    - docker-compose--compose--down
-      Stops and removes required docker containers and docker networks. (related [script](bash-commands/docker-compose--compose--down.sh))
-    - docker-compose--compose--up
-      Creates and starts required docker containers and docker networks. (related [script](bash-commands/docker-compose--compose--up.sh))
+    - [docker-compose--compose--create](bash-commands/docker-compose--compose--create.sh)
+      Creates required docker containers and docker networks but does not start them.
+    - [docker-compose--compose--down](bash-commands/docker-compose--compose--down.sh)
+      Stops and removes required docker containers and docker networks.
+    - [docker-compose--compose--up](bash-commands/docker-compose--compose--up.sh)
+      Creates and starts required docker containers and docker networks.
   - docker-compose--container--*
-    - docker-compose--container--kill
+    - [docker-compose--container--kill](bash-commands/docker-compose--container--kill.sh)
+      Kills running containers declared by the compose configuration.
     - docker-compose--container--restart
     - docker-compose--container--start
     - docker-compose--container--stop
