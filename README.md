@@ -61,4 +61,5 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
     - [docker-compose--volumes--wipe-local](bash-commands/docker-compose--volumes--wipe-local.sh)  
       Wipes local volume mapping directories, located in the subdirectory 'volumes/', if there are any.
 - git--*
-  - git--pull-and-update-submodules
+  - [git--pull-and-update-submodules](bash-commands/git--pull-and-update-submodules.sh)  
+    Rebase pulls the latest repository changes and the updates all git submodules if there are any.
