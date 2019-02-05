@@ -53,8 +53,10 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
     - [docker-compose--log--container-log](bash-commands/docker-compose--log--container-log.sh)  
       Prints logs of running containers declared by the compose configuration to the console.
   - docker-compose--system--*
-    - docker-compose--system--clean
-    - docker-compose--system--prune
+    - [docker-compose--system--clean](bash-commands/docker-compose--system--clean.sh)  
+      Removes local dangling docker containers, images and networks.
+    - [docker-compose--system--prune](bash-commands/docker-compose--system--prune.sh)  
+      Prunes the local docker system.
   - docker-compose--volumes--*
     - docker-compose--volumes--wipe-local
 - git--*
