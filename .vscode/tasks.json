@@ -10,7 +10,7 @@
             [
                               "bash-util/elevate.sh",
                               "${USER}",
-                              "bash-commands/open-application-url.sh",
+                              "bash-commands/browser--open-application-url.sh",
                               ".",
                               "default.docker-compose",
             ],
