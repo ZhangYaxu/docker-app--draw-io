@@ -4,6 +4,7 @@
 !.vscode/tasks.json
 !bash-commands/
 !bash-commands/open-application-url.sh
+!bash-commands/pull-and-update-submodules.sh
 !bash-util/
 !bash-util/elevate.sh
 !bash-util/functions.sh

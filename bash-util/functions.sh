@@ -5,7 +5,7 @@ function ensure_existing_file() {
 
     if [ ! -f ${VAR_PATH_TO_FILE} ];
     then
-        echo "The directory $(realpath ${VAR_PATH_TO_FILE}) does not exist."
+        echo "The directory $( realpath ${VAR_PATH_TO_FILE} ) does not exist."
         exit 1
     fi
 }
@@ -15,7 +15,7 @@ function ensure_existing_directory() {
 
     if [ ! -d ${VAR_PATH_TO_DIRECTORY} ];
     then
-        echo "The directory $(realpath ${VAR_PATH_TO_DIRECTORY}) does not exist."
+        echo "The directory $( realpath ${VAR_PATH_TO_DIRECTORY} ) does not exist."
         exit 1
     fi
 }
@@ -49,11 +49,11 @@ function export_environment_file() {
 function open_application_url_if_defined() {
     local VAR_NAME_OF_URL_ENVIRONMENT_VARIABLE="HOST_SERVICE_URL"
 
-    echo "Opening URL ..."
+    echo -E "Opening URL ..."
 
     if [[ ! -v ${VAR_NAME_OF_URL_ENVIRONMENT_VARIABLE} ]];
     then
-        echo "Opening URL ... skipped"
+        echo -e "Opening URL ... $( __skipped )"
         exit 0
     fi
     
@@ -61,10 +61,12 @@ function open_application_url_if_defined() {
     
     xdg-open "${VAR_URL_TO_OPEN}"
 
-    echo "Opening URL ... done"
+    echo -e "Opening URL ... $( __done )"
 }
 
 function prepare_local_environment() {
+    echo -E "Preparing local environment ..."
+
     local VAR_HOST_PATH_TO_CONFIGURATION_DIR=${1}
     local VAR_HOST_NAME_OF_DOCKER_COMPOSE_FILE=${2}
 
@@ -83,4 +85,18 @@ function prepare_local_environment() {
     ensure_existing_file ${VAR_HOST_PATH_TO_DOCKER_COMPOSE_FILE}
 
     export HOST_PATH_TO_DOCKER_COMPOSE_FILE=${VAR_HOST_PATH_TO_DOCKER_COMPOSE_FILE}
+
+    echo -e "Preparing local environment ... $( __done )"
+}
+
+function __done() {
+    echo "\033[0;32mdone\033[0m"
+}
+
+function __error() {
+    echo "\033[0;31merror\033[0m"
+}
+
+function __skipped() {
+    echo "\033[0;33mskipped\033[0m"
 }

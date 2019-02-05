@@ -16,6 +16,15 @@
             ],
             "problemMatcher": [ ],
         },
+        {
+            "label":         "git--pull-and-update-submodules",
+            "type":          "shell",
+            "command":       "/bin/bash",
+            "args": [
+                             "bash-commands/pull-and-update-submodules.sh",
+            ],
+            "problemMatcher": [ ],
+        },
         // {
         //     "label":         "browser--open-application-url--frontend-only",
         //     "type":          "shell",
@@ -212,15 +221,6 @@
         //                      "frontend-only.docker-compose",
         //                      "up",
         //                      "--detach",
-        //     ],
-        //     "problemMatcher": [ ],
-        // },
-        // {
-        //     "label":         "git--pull-and-update-submodules",
-        //     "type":          "shell",
-        //     "command":       "/bin/bash",
-        //     "args": [
-        //                      "bash/git/pull-and-update-submodules.sh",
         //     ],
         //     "problemMatcher": [ ],
         // },
