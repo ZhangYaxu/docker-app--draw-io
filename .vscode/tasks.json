@@ -31,6 +31,20 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "docker-compose--container--stop",
+            "type":           "shell",
+            "command":        "/bin/bash",
+            "args":
+            [
+                              "bash-util/elevate.sh",
+                              "root",
+                              "bash-commands/docker-compose--container--stop.sh",
+                              ".",
+                              "default.docker-compose",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":          "docker-compose--container--up",
             "type":           "shell",
             "command":        "/bin/bash",
