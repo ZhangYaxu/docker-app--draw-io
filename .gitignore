@@ -18,7 +18,7 @@
 !bash-commands/docker-compose--system--clean.sh
 !bash-commands/docker-compose--system--prune.sh
 !bash-commands/docker-compose--volumes--wipe-local.sh
-!bash-commands/pull-and-update-submodules.sh
+!bash-commands/git--pull-and-update-submodules.sh
 !bash-util/
 !bash-util/elevate.sh
 !bash-util/functions.sh

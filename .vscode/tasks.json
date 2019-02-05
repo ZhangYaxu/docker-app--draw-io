@@ -217,7 +217,7 @@
             "type":          "shell",
             "command":       "/bin/bash",
             "args": [
-                             "bash-commands/pull-and-update-submodules.sh",
+                             "bash-commands/git--pull-and-update-submodules.sh",
             ],
             "problemMatcher": [ ],
         },
