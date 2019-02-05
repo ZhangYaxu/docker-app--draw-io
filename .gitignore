@@ -19,6 +19,7 @@
 !bash-commands/docker-compose--system--prune.sh
 !bash-commands/docker-compose--volumes--wipe-local.sh
 !bash-commands/git--pull-and-update-submodules.sh
+!bash-util
 !docker/
 !docker/server--draw-io/
 !docker/server--draw-io/default.docker
@@ -26,6 +27,7 @@
 !docker-compose/server--draw-io/
 !docker-compose/server--draw-io/default.docker-compose
 !.gitignore
+!.gitmodules
 !host.env
 !LICENCE
 !README.md
