@@ -2,23 +2,6 @@
 
 !.vscode/
 !.vscode/tasks.json
-!bash-commands/
-!bash-commands/browser--open-application-url.sh
-!bash-commands/docker-compose--compose--create.sh
-!bash-commands/docker-compose--compose--down.sh
-!bash-commands/docker-compose--compose--up.sh
-!bash-commands/docker-compose--container--kill.sh
-!bash-commands/docker-compose--container--restart.sh
-!bash-commands/docker-compose--container--start.sh
-!bash-commands/docker-compose--container--stop.sh
-!bash-commands/docker-compose--image--build.sh
-!bash-commands/docker-compose--image--rebuild.sh
-!bash-commands/docker-compose--log--container-info.sh
-!bash-commands/docker-compose--log--container-log.sh
-!bash-commands/docker-compose--system--clean.sh
-!bash-commands/docker-compose--system--prune.sh
-!bash-commands/docker-compose--volumes--wipe-local.sh
-!bash-commands/git--pull-and-update-submodules.sh
 !bash-util
 !docker/
 !docker/server--draw-io/
