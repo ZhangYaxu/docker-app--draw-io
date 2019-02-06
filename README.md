@@ -8,7 +8,7 @@ The server application draw-io ready to run inside a docker container.
 
 ## how to use
 
-To easily experiment with the draw-io frontend build, the following pre-requisites are preferred:
+To easily experiment with draw-io, the following pre-requisites are preferred:
 
 1. Install [VS Code](https://code.visualstudio.com/), to easily use predefined [tasks](.vscode/tasks.json)
 2. Install any [ssh-askpass](https://man.openbsd.org/ssh-askpass.1) to handle sudo prompts required for docker  
