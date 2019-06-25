@@ -1,5 +1,6 @@
 # docker-app: draw-io
 
+![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/talsen-team/docker-app--draw-io.svg?style=for-the-badge)
 [![Docker Automated build](https://img.shields.io/docker/cloud/automated/talsenteam/docker-draw-io.svg?style=for-the-badge)](//hub.docker.com/r/talsenteam/docker-draw-io/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/talsenteam/docker-draw-io.svg?style=for-the-badge)](//hub.docker.com/r/talsenteam/docker-draw-io/)
 [![Docker Build Status](https://img.shields.io/docker/cloud/build/talsenteam/docker-draw-io.svg?style=for-the-badge)](//hub.docker.com/r/talsenteam/docker-draw-io/)
