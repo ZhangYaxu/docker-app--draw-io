@@ -6,7 +6,7 @@ services:
       context:      './../../docker/server--draw-io'
       dockerfile:   'default.docker'
     container_name: 'server--draw-io'
-    image:          'talsen-team/docker-draw-io:v10.8.0'
+    image:          'talsen-team/docker-draw-io:v10.8.9'
     ports:
       -             '80:80'
     restart:        'no'
