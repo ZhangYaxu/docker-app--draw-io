@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-ENV BUILD_DRAW_IO_VERSION=v10.8.0
+ENV BUILD_DRAW_IO_VERSION=v10.8.9
 
 RUN apk update                                         \
  && apk add --no-cache                                 \
