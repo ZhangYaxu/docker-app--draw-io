@@ -1,13 +1,20 @@
 language: python
 
 python:
-  - '3'
+  - '3.7'
 
 branches:
   only:
     - master
 
+install:
+  - pip3 install molecule docker docker-compose
+
 jobs:
   include:
     - stage: test
-      script: cd ansible/test--docker-compose--compose--create.role && molecule test
+      script:
+        - ansible --version
+        - molecule --version
+        - pip3 freeze
+        - cd ansible/test--docker-compose--compose--create.role && molecule test
