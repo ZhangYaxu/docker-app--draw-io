@@ -8,18 +8,11 @@ branches:
     - master
 
 install:
-  - pip uninstall requests
   - pip install docker==3.7.3 docker-compose molecule requests==2.20.1
+  - ls -Al /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages
 
 jobs:
   include:
     - stage: test
       script:
-        - ansible --version
-        - molecule --version
-        - python --version
-        - python3 --version
-        - pip --version
-        - pip3 --version
-        - pip freeze
         - cd ansible/test--docker-compose--compose--create.role && molecule test
