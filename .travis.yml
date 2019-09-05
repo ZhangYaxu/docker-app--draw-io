@@ -3,13 +3,15 @@ language: python
 python:
   - '3.7'
 
+services:
+  - docker
+
 branches:
   only:
     - master
 
 install:
   - pip install docker==3.7.3 docker-compose molecule requests==2.20.1
-  - ls -Al /home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages
 
 jobs:
   include:
