@@ -1,3 +1,5 @@
+dist: disco
+
 language: python
 
 python:
