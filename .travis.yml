@@ -4,5 +4,7 @@ branches:
   only:
     - master
 
-script:
-  - whoami
+jobs:
+  include:
+    - stage: test
+      script: cd ansible/test--docker-compose--compose--create.role && molecule test
