@@ -8,7 +8,7 @@ branches:
     - master
 
 install:
-  - pip3 install molecule docker==3.7.3 docker-compose
+  - pip install molecule docker==3.7.3 docker-compose
 
 jobs:
   include:
@@ -16,5 +16,5 @@ jobs:
       script:
         - ansible --version
         - molecule --version
-        - pip3 freeze
+        - pip freeze
         - cd ansible/test--docker-compose--compose--create.role && molecule test
