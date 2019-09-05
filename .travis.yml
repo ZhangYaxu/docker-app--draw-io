@@ -8,7 +8,7 @@ branches:
     - master
 
 install:
-  - pip install --user docker==3.7.3 docker-compose molecule
+  - whoami && pwd && pip install docker==3.7.3 docker-compose molecule
 
 jobs:
   include:
