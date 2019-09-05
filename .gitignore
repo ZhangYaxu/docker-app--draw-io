@@ -33,6 +33,7 @@
 !docker-compose/server--draw-io/default.docker-compose
 !.gitignore
 !.gitmodules
+!.travis-ci.yml
 !host.env
 !LICENCE
 !README.md

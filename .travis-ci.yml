@@ -1,0 +1,10 @@
+language: bash
+
+branches:
+  only:
+    - master
+
+jobs:
+  include:
+    - stage: test
+      script: whoami
