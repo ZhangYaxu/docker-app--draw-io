@@ -15,7 +15,7 @@
 !ansible/test--docker-compose--compose--create.role/molecule/default/tests/
 !ansible/test--docker-compose--compose--create.role/molecule/default/tests/test_default.py
 !ansible/test--docker-compose--compose--create.role/molecule/default/cleanup.yml
-!ansible/test--docker-compose--compose--create.role/molecule/default/playbook.yml
+!ansible/test--docker-compose--compose--create.role/molecule/default/molecule.yml
 !ansible/test--docker-compose--compose--create.role/molecule/default/playbook.yml
 !ansible/test--docker-compose--compose--create.role/tasks/
 !ansible/test--docker-compose--compose--create.role/tasks/main.yml
