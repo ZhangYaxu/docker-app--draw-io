@@ -8,7 +8,7 @@ branches:
     - master
 
 install:
-  - pip install molecule docker==3.7.3 docker-compose
+  - pip install docker==3.7.3 docker-compose molecule PyYAML==3.13
 
 jobs:
   include:
