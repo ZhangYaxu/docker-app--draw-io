@@ -221,5 +221,19 @@
             ],
             "problemMatcher": [ ],
         },
+        {
+            "label":          "test--docker-compose--compose--create",
+            "type":           "process",
+            "command":        "molecule",
+            "options":
+            {
+                "cwd":        "ansible/test--docker-compose--compose--create.role"
+            },
+            "args":
+            [
+                              "test",
+            ],
+            "problemMatcher": [ ],
+        },
     ]
 }

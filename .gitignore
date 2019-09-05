@@ -2,6 +2,27 @@
 
 !.vscode/
 !.vscode/tasks.json
+!ansible/
+!ansible/test--docker-compose--compose--create.role/
+!ansible/test--docker-compose--compose--create.role/defaults/
+!ansible/test--docker-compose--compose--create.role/defaults/main.yml
+!ansible/test--docker-compose--compose--create.role/handlers/
+!ansible/test--docker-compose--compose--create.role/handlers/main.yml
+!ansible/test--docker-compose--compose--create.role/meta/
+!ansible/test--docker-compose--compose--create.role/meta/main.yml
+!ansible/test--docker-compose--compose--create.role/molecule/
+!ansible/test--docker-compose--compose--create.role/molecule/default/
+!ansible/test--docker-compose--compose--create.role/molecule/default/tests/
+!ansible/test--docker-compose--compose--create.role/molecule/default/tests/test_default.py
+!ansible/test--docker-compose--compose--create.role/molecule/default/cleanup.yml
+!ansible/test--docker-compose--compose--create.role/molecule/default/playbook.yml
+!ansible/test--docker-compose--compose--create.role/molecule/default/playbook.yml
+!ansible/test--docker-compose--compose--create.role/tasks/
+!ansible/test--docker-compose--compose--create.role/tasks/main.yml
+!ansible/test--docker-compose--compose--create.role/vars/
+!ansible/test--docker-compose--compose--create.role/vars/main.yml
+!ansible/test--docker-compose--compose--create.role/.ansible-lint
+!ansible/test--docker-compose--compose--create.role/.yamllint
 !bash-commands
 !bash-util
 !docker/
