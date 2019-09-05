@@ -13,6 +13,9 @@ branches:
     - master
 
 install:
+  - lsb_release -a
+  - docker --version
+  - docker-compose --version
   - pip install docker==3.7.3 docker-compose molecule requests==2.20.1
 
 jobs:
