@@ -29,7 +29,7 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
 - docker-compose--*
   - docker-compose--compose--*
     - [docker-compose--compose--create](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--compose--create.sh)  
-      Creates required docker containers and docker networks but does not start them.
+      Creates required docker containers and docker networks but does not start them.  
       [test--docker-compose--compose--create](ansible/test--docker-compose--compose--create.role/molecule/default/tests/test_default.py)  
       Provided tests for command 'docker-compose--compose--create'  
     - [docker-compose--compose--down](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--compose--down.sh)  
