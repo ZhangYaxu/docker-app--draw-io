@@ -8,7 +8,7 @@ branches:
     - master
 
 install:
-  - pip install docker==3.7.3 docker-compose molecule PyYAML==3.13 requests==2.20.1
+  - pip install --user docker==3.7.3 docker-compose molecule
 
 jobs:
   include:
@@ -16,5 +16,9 @@ jobs:
       script:
         - ansible --version
         - molecule --version
+        - python --version
+        - python3 --version
+        - pip --version
+        - pip3 --version
         - pip freeze
         - cd ansible/test--docker-compose--compose--create.role && molecule test
