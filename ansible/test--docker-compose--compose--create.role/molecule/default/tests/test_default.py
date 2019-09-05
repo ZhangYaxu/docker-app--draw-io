@@ -1,3 +1,4 @@
+import pytest
 import os
 
 import testinfra.utils.ansible_runner
@@ -6,19 +7,20 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
-def test_that_required_files_are_existing(host):
+@pytest.mark.parametrize('name', [
+    '/bash-commands/docker-compose--compose--create.sh',
+    '/bash-util/elevate.sh',
+    '/bash-util/functions.sh',
+    '/docker/server--draw-io/default.docker',
+    '/docker-compose/server--draw-io/default.docker-compose',
+    '/host.env',
+])
+def test_that_required_files_are_existing(host, name):
     test_dir = '../../../../tests/test--docker-compose--compose--create'
-    for name in (
-        test_dir + '/bash-commands/docker-compose--compose--create.sh',
-        test_dir + '/bash-util/elevate.sh',
-        test_dir + '/bash-util/functions.sh',
-        test_dir + '/docker/server--draw-io/default.docker',
-        test_dir + '/docker-compose/server--draw-io/default.docker-compose',
-        test_dir + '/host.env',
-    ):
-        f = host.file(name)
 
-        assert f.exists
+    f = host.file(test_dir + name)
+
+    assert f.exists
 
 
 def test_that_required_docker_container_is_existing(host):
