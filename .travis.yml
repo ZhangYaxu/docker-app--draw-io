@@ -1,4 +1,4 @@
-dist: 18.04
+dist: xenial
 
 language: python
 
