@@ -18,10 +18,12 @@ install:
   - docker-compose --version
   - python --version
   - python3 --version
-  - pip install docker==3.7.3 docker-compose molecule requests==2.20.1
+  - pip install ansible docker==3.7.3 docker-compose molecule requests==2.20.1
+  - ansible --version
+  - molecule --version
 
 jobs:
   include:
     - stage: test
       script:
-        - cd ansible/test--docker-compose--compose--create.role && molecule test
+        - cd ansible/test--docker-compose--compose--create.role && sudo molecule test
