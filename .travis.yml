@@ -14,7 +14,7 @@ install:
   - docker --version
   - docker-compose --version
   - sudo apt-get update && sudo apt-get install --yes --no-install-recommends python3
-  - pip install docker==3.7.3 docker-compose molecule requests==2.20.1
+  - pip3 install --user docker==3.7.3 docker-compose molecule requests==2.20.1
 
 jobs:
   include:
