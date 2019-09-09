@@ -1,4 +1,4 @@
-dist: disco
+dist: 19.04
 
 language: python
 
