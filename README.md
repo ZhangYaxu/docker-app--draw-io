@@ -36,7 +36,9 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
     - [docker-compose--compose--down](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--compose--down.sh)  
       Stops and removes required docker containers and docker networks.
     - [docker-compose--compose--up](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--compose--up.sh)  
-      Creates and starts required docker containers and docker networks.
+      Creates and starts required docker containers and docker networks.  
+      [test--docker-compose--compose--up](ansible/test--docker-compose--compose--up.role/molecule/default/tests/test_default.py)  
+      Provided tests for command 'docker-compose--compose--up'.  
   - docker-compose--container--*
     - [docker-compose--container--kill](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--container--kill.sh)  
       Kills all running containers declared by the compose configuration.
