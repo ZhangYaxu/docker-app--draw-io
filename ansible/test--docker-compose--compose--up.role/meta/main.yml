@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: David Lechner
+  description: Tests the docker-compose--compose--up command.
+  company: talsen team GmbH
+  license: MPL-2.0
+  min_ansible_version: 2.4
+  github_branch: master
+  platforms:
+    - name: ubuntu
+      versions:
+        - 19.04
+  galaxy_tags: []
+dependencies: []

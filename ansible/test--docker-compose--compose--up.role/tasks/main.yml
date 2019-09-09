@@ -9,7 +9,7 @@
 
 - name: set_fact_test_dir
   set_fact:
-    test_dir: "{{ tests_dir }}/test--docker-compose--compose--create"
+    test_dir: "{{ tests_dir }}/test--docker-compose--compose--up"
 
 - name: create_required_directories
   file:
@@ -35,7 +35,7 @@
     remote_src: true
     src: "{{ project_dir }}/{{ item.name }}"
   with_items:
-    - name: bash-commands/docker-compose--compose--create.sh
+    - name: bash-commands/docker-compose--compose--up.sh
     - name: bash-util/elevate.sh
     - name: bash-util/functions.sh
     - name: docker/server--draw-io/default.docker

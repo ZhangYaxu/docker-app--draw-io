@@ -1,0 +1,5 @@
+---
+- name: execute_command
+  command: /bin/bash bash-util/elevate.sh root bash-commands/docker-compose--compose--up.sh . default.docker-compose
+  args:
+    chdir: "{{ test_dir }}"
