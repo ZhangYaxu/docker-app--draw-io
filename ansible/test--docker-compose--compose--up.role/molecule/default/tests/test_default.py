@@ -27,3 +27,15 @@ def test_that_required_docker_container_is_existing(host):
     c = host.docker.get_containers(name='server--draw-io', status='running')
 
     assert len(c) == 1
+
+
+def test_that_mapped_port_is_reserved(host):
+    s = host.socket('tcp://127.0.0.1:80')
+
+    assert s.is_listening
+
+
+def test_that_mapped_port_is_responding(host):
+    r = host.run('wget --output-document=/dev/null http://127.0.0.1')
+
+    assert r.rc == 0
