@@ -223,15 +223,12 @@
         },
         {
             "label":          "test--docker-compose--compose--create",
-            "type":           "process",
-            "command":        "molecule",
-            "options":
-            {
-                "cwd":        "ansible/test--docker-compose--compose--create.role"
-            },
+            "type":           "shell",
+            "command":       "/bin/bash",
             "args":
             [
-                              "test",
+                              "bash-ansible/test--any.sh",
+                              "docker-compose--compose--create",
             ],
             "problemMatcher": [ ],
         },

@@ -16,7 +16,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     '/host.env',
 ])
 def test_that_required_files_are_existing(host, name):
-    test_dir = '../../../../tests/test--docker-compose--compose--create'
+    test_dir = os.environ['TESTS_DIRECTORY'] + '/test--docker-compose--compose--create'  # noqa: #501
 
     f = host.file(test_dir + name)
 

@@ -43,6 +43,8 @@
 !ansible/test--docker-compose--compose--up.role/vars/main.yml
 !ansible/test--docker-compose--compose--up.role/.ansible-lint
 !ansible/test--docker-compose--compose--up.role/.yamllint
+!bash-ansible/
+!bash-ansible/test--any.sh
 !bash-commands
 !bash-util
 !docker/
