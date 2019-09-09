@@ -10,10 +10,7 @@
         state: absent
     - name: remove_tests_directory
       file:
-        group: "{{ lookup('env','USER') }}"
-        mode: 0o700
-        owner: "{{ lookup('env','USER') }}"
-        path: ../../../../tests
+        path: "{{ lookup('env','TESTS_DIRECTORY') }}"
         state: absent
   vars:
     ansible_python_interpreter: /usr/bin/python3

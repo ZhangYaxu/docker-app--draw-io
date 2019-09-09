@@ -234,15 +234,12 @@
         },
         {
             "label":          "test--docker-compose--compose--up",
-            "type":           "process",
-            "command":        "molecule",
-            "options":
-            {
-                "cwd":        "ansible/test--docker-compose--compose--up.role"
-            },
+            "type":           "shell",
+            "command":       "/bin/bash",
             "args":
             [
-                              "test",
+                              "bash-ansible/test--any.sh",
+                              "docker-compose--compose--up",
             ],
             "problemMatcher": [ ],
         },
