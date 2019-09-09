@@ -18,7 +18,7 @@ install:
   - docker-compose --version
   - python --version
   - python3 --version
-  - pip install ansible docker==3.7.3 docker-compose molecule requests==2.20.1
+  - pip install ansible docker==3.7.3 molecule requests==2.20.1
   - ansible --version
   - molecule --version
 
