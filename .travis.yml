@@ -13,7 +13,8 @@ install:
   - lsb_release -a
   - docker --version
   - docker-compose --version
-  - sudo apt-get update && sudo apt-get install --yes --no-install-recommends python3
+  - python --version
+  - sudo apt-get update && sudo apt-get install --yes --no-install-recommends python3 python3-pip
   - pip3 install --user docker==3.7.3 docker-compose molecule requests==2.20.1
 
 jobs:
