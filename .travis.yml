@@ -12,13 +12,18 @@ branches:
   only:
     - master
 
+sudo: required
+
+before_install:
+  - deactivate
+
 install:
   - lsb_release -a
   - docker --version
   - docker-compose --version
   - python --version
   - python3 --version
-  - pip install ansible molecule
+  - pip install --user ansible molecule
   - ansible --version
   - molecule --version
 
