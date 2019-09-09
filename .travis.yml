@@ -23,5 +23,5 @@ jobs:
   include:
     - stage: test
       script:
-        - $( cd ansible/test--docker-compose--compose--create.role && molecule test )
-        - $( cd ansible/test--docker-compose--compose--up.role     && molecule test )
+        - cd ansible/test--docker-compose--compose--create.role && molecule test && cd ../..
+        - cd ansible/test--docker-compose--compose--up.role     && molecule test && cd ../..
