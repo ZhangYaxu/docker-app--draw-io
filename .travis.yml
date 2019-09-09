@@ -1,9 +1,6 @@
 dist: bionic
 
-language: python
-
-python:
-  - '3.7'
+language: minimal
 
 services:
   - docker
@@ -15,17 +12,10 @@ branches:
 sudo: required
 
 before_install:
-  - deactivate
+  - sudo apt-get update && sudo apt-get install --no-install-recommends --yes python3 python3-pip
 
 install:
-  - lsb_release -a
-  - docker --version
-  - docker-compose --version
-  - python --version
-  - python3 --version
   - pip3 install --user ansible docker==3.7.3 molecule requests==2.20.1
-  - ansible --version
-  - molecule --version
 
 jobs:
   include:
