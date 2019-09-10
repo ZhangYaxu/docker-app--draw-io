@@ -1,0 +1,8 @@
+---
+- name: converge
+  hosts: localhost
+  connection: local
+  roles:
+    - { role: test--docker-compose--compose--down.role, system_user: "{{ lookup('env','USER') }}" }
+  vars:
+    ansible_python_interpreter: /usr/bin/python3

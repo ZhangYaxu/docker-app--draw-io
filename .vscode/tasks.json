@@ -233,6 +233,17 @@
             "problemMatcher": [ ],
         },
         {
+            "label":          "test--docker-compose--compose--down",
+            "type":           "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                              "bash-ansible/test--any.sh",
+                              "docker-compose--compose--down",
+            ],
+            "problemMatcher": [ ],
+        },
+        {
             "label":          "test--docker-compose--compose--up",
             "type":           "shell",
             "command":       "/bin/bash",

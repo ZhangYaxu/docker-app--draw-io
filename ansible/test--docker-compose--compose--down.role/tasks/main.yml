@@ -1,0 +1,45 @@
+---
+- name: set_fact_project_dir
+  set_fact:
+    project_dir: "{{ lookup('env','PROJECT_DIRECTORY') }}"
+
+- name: set_fact_tests_dir
+  set_fact:
+    tests_dir: "{{ lookup('env','TESTS_DIRECTORY') }}"
+
+- name: set_fact_test_dir
+  set_fact:
+    test_dir: "{{ tests_dir }}/test--docker-compose--compose--down"
+
+- name: create_required_directories
+  file:
+    group: "{{ system_user }}"
+    mode: 0o700
+    owner: "{{ system_user }}"
+    path: "{{ item.path }}"
+    state: directory
+  with_items:
+    - path: "{{ tests_dir }}"
+    - path: "{{ test_dir }}"
+    - path: "{{ test_dir }}/bash-commands"
+    - path: "{{ test_dir }}/bash-util"
+    - path: "{{ test_dir }}/docker"
+    - path: "{{ test_dir }}/docker/server--draw-io"
+    - path: "{{ test_dir }}/docker-compose"
+    - path: "{{ test_dir }}/docker-compose/server--draw-io"
+
+- name: copy_required_files
+  copy:
+    dest: "{{ test_dir }}/{{ item.name }}"
+    mode: 0o600
+    remote_src: true
+    src: "{{ project_dir }}/{{ item.name }}"
+  with_items:
+    - name: bash-commands/docker-compose--compose--down.sh
+    - name: bash-commands/docker-compose--compose--up.sh
+    - name: bash-util/elevate.sh
+    - name: bash-util/functions.sh
+    - name: docker/server--draw-io/default.docker
+    - name: docker-compose/server--draw-io/default.docker-compose
+    - name: host.env
+  notify: prepare_command
