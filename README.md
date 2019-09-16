@@ -41,7 +41,9 @@ Any docker-compose--* tasks refer to the default [dockerfile](docker/server--dra
       Provided tests for command 'docker-compose--compose--up'.  
   - docker-compose--container--*
     - [docker-compose--container--kill](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--container--kill.sh)  
-      Kills all running containers declared by the compose configuration.
+      Kills all running containers declared by the compose configuration.  
+      [test--docker-compose--container--kill](ansible/test--docker-compose--container--kill.role/molecule/default/tests/test_default.py)  
+      Provided tests for command 'docker-compose--container--kill'.  
     - [docker-compose--container--restart](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--container--restart.sh)  
       Restarts all containers declared by the compose configuration (if they were created before).
     - [docker-compose--container--start](//github.com/talsen-team/docker-util--bash-commands/blob/master/docker-compose--container--start.sh)  
