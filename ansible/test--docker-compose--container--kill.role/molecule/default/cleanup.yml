@@ -1,0 +1,16 @@
+---
+- name: cleanup
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: remove_docker_container
+      docker_container:
+        name: server--draw-io
+        state: absent
+    - name: remove_tests_directory
+      file:
+        path: "{{ lookup('env','TESTS_DIRECTORY') }}"
+        state: absent
+  vars:
+    ansible_python_interpreter: /usr/bin/python3

@@ -254,5 +254,16 @@
             ],
             "problemMatcher": [ ],
         },
+        {
+            "label":          "test--docker-compose--container--kill",
+            "type":           "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                              "bash-ansible/test--any.sh",
+                              "docker-compose--container--kill",
+            ],
+            "problemMatcher": [ ],
+        },
     ]
 }

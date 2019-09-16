@@ -1,0 +1,11 @@
+---
+- name: prepare_command
+  command: /bin/bash bash-util/elevate.sh root bash-commands/docker-compose--compose--up.sh . default.docker-compose
+  args:
+    chdir: "{{ test_dir }}"
+  notify: execute_command
+
+- name: execute_command
+  command: /bin/bash bash-util/elevate.sh root bash-commands/docker-compose--container--kill.sh . default.docker-compose
+  args:
+    chdir: "{{ test_dir }}"
