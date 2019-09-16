@@ -24,5 +24,6 @@ jobs:
     - stage: test
       script:
         - /bin/bash bash-ansible/test--any.sh docker-compose--compose--create
-        - /bin/bash bash-ansible/test--any.sh docker-compose--compose--down
         - /bin/bash bash-ansible/test--any.sh docker-compose--compose--up
+        - /bin/bash bash-ansible/test--any.sh docker-compose--compose--down
+        - /bin/bash bash-ansible/test--any.sh docker-compose--container--kill
