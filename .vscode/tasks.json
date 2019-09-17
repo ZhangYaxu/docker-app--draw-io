@@ -265,5 +265,16 @@
             ],
             "problemMatcher": [ ],
         },
+        {
+            "label":          "test--docker-compose--container--restart",
+            "type":           "shell",
+            "command":       "/bin/bash",
+            "args":
+            [
+                              "bash-ansible/test--any.sh",
+                              "docker-compose--container--restart",
+            ],
+            "problemMatcher": [ ],
+        },
     ]
 }
