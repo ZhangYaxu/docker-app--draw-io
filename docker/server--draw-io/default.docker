@@ -1,1 +1,1 @@
-FROM fjudith/draw.io:11.1.2-alpine
+FROM fjudith/draw.io:12.6.4-alpine
